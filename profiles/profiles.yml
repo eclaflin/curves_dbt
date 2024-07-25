@@ -1,4 +1,4 @@
-my_project:
+dev:
   target: dev
   outputs:
     dev:
@@ -7,6 +7,6 @@ my_project:
       user: myuser
       password: mypassword
       port: 5432
-      dbname: mydatabse
+      dbname: mydatabase
       schema: public
 
