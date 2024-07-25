@@ -1,0 +1,5 @@
+# dbt_project.yml
+
+name: 'my_dbt_project'
+version: '1.0.0'
+profile: 'my_profile'
