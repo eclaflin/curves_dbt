@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  dbt:
+    image: python:3.9-slim
+    container_name: dbt_dev
+    working_dir: /app
+    volumes:
+      - .:/app
+    entrypoint: ["sh", "/app/entrypoint.sh"]
+    environment:
+      - DBT_PROFILES_DIR=/app/profiles
+    ports:
+      - "8080:8080"
+
