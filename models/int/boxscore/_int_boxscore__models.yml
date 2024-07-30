@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_score_line
+    description: "return data needed for inning-by-inning scoreline in a box score"
