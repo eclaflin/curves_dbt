@@ -16,6 +16,7 @@ max_id_frame as (
         sp.game_pk,
         sp.inning,
         sp.inning_topbot,
+        -- TODO: this breaks if autoincrementing pk isn't consecutive
         max(sp.id) as max_id
     from
         statcast_pitch sp
@@ -26,6 +27,7 @@ max_id_frame as (
 )
 
 select
+    midf.max_id as frame_ending_pitch_id,
     midf.game_pk,
     midf.inning,
     midf.inning_topbot,
