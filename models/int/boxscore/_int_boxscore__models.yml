@@ -5,3 +5,6 @@ models:
     description: "return data needed for inning-by-inning scoreline in a box score"
   - name: int_runs_total
     description: "return team scoreline totals for runs"
+  - name: int_hits_total
+    description: "return team scoreline totals for hits"
+  
