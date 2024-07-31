@@ -7,4 +7,5 @@ models:
     description: "return team scoreline totals for runs"
   - name: int_hits_total
     description: "return team scoreline totals for hits"
-  
+  - name: int_errors_total
+    description: "return team scoreline totals for errors"
