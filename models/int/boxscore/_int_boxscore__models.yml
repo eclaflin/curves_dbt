@@ -1,11 +1,11 @@
 version: 2
 
 models:
-  - name: int_score_line
+  - name: int_team_score_line
     description: "return data needed for inning-by-inning scoreline in a box score"
-  - name: int_runs_total
+  - name: int_team_runs_total
     description: "return team scoreline totals for runs"
-  - name: int_hits_total
+  - name: int_team_hits_total
     description: "return team scoreline totals for hits"
-  - name: int_errors_total
+  - name: int_team_errors_total
     description: "return team scoreline totals for errors"

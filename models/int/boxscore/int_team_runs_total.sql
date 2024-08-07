@@ -7,7 +7,7 @@ with score_line as (
     select
         *
     from
-        {{ ref('int_score_line') }}
+        {{ ref("int_team_score_line") }}
 ),
 
 run_totals as (
