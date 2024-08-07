@@ -5,7 +5,8 @@
 
 with statcast_pitch as (
     select *
-    from {{ ref('stg_statcast__statcast_pitch') }}
+    from
+        {{ ref('stg_statcast__statcast_pitch') }}
 ),
 
 err_ttl as (
