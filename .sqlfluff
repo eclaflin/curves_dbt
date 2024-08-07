@@ -5,7 +5,7 @@
 dialect = postgres
 
 # One of [raw|jinja|python|placeholder]
-templater = jinja
+templater = dbt
 
 # Comma separated list of rules to exclude, or None
 # See https://docs.sqlfluff.com/en/stable/configuration.html#enabling-and-disabling-rules
@@ -30,6 +30,9 @@ processes = -1
 # If using the dbt templater, we recommend setting the project dir.
 [sqlfluff:templater:dbt]
 project_dir = ./
+
+[sqlfluff:templater:jinja]
+apply_dbt_builtins = True
 
 [sqlfluff:indentation]
 # While implicit indents are not enabled by default. Many of the
