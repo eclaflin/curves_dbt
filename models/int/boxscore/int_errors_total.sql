@@ -4,8 +4,7 @@
 }}
 
 with statcast_pitch as (
-    select
-        *
+    select *
     from
         {{ ref('stg_statcast__statcast_pitch') }}
 ),
@@ -27,7 +26,6 @@ err_ttl as (
         inning_topbot
 )
 
-select
-    *
+select *
 from
     err_ttl
