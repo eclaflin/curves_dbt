@@ -3,6 +3,6 @@ version: 2
 sources:
   - name: statcast
     database: mydatabase
-    schema: public
+    schema: staging
     tables:
       - name: statcast_pitch
