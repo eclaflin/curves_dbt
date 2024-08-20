@@ -1,4 +1,4 @@
-dev:
+curves_dbt:
   target: dev
   outputs:
     dev:
@@ -8,5 +8,13 @@ dev:
       password: mypassword
       port: 5432
       dbname: mydatabase
-      schema: public
+      schema: dev
 
+    prod:
+      type: postgres
+      host: host.docker.internal
+      user: myuser
+      password: mypassword
+      port: 5432
+      dbname: mydatabase
+      schema: prod
