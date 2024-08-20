@@ -2,3 +2,4 @@
 
 name: 'my_dbt_project'
 version: '1.0.0'
+profile: curves_dbt
