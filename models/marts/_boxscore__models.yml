@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: team_box_score
+    description: "returns team level frames and totals"
