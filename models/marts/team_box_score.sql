@@ -36,7 +36,7 @@ scrln_bottom as (
     from
         {{ ref('int_team_score_line') }}
     where
-        inning_topbot = 'Bottom'
+        inning_topbot = 'Bot'
     group by
         game_pk,
         inning_topbot
@@ -80,7 +80,7 @@ joined as (
         unioned.*,
         case
             when unioned.inning_topbot = 'Top' then runs.away_runs_scored
-            when unioned.inning_topbot = 'Bottom' then runs.home_runs_scored
+            when unioned.inning_topbot = 'Bot' then runs.home_runs_scored
             else null
         end as runs,
         hits.team_hits,
