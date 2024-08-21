@@ -67,9 +67,8 @@ limit 5
 | 140588 | 9 | Top | 1 | 62 |
 
 - In this way, it's exactly the opposite of how it was assumed
-- However, while we do see *instances* of it being ***exactly*** opposite of assumed, we can't validate that it is *always* the opposite (i.e. we can't just assume we can rely on the reverse)
+- However, while we do see *instances* of it being ***exactly*** opposite of assumed, we can't validate that it is *always* the opposite (i.e. we can't just assume we can rely on the reverse), [gist](https://gist.github.com/eclaflin/3521e24bd529550ec70d52d6696049bf)
 
-<script src="https://gist.github.com/eclaflin/3521e24bd529550ec70d52d6696049bf.js"></script>
 
 | count |
 | :--- |
