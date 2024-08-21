@@ -13,8 +13,8 @@ with score_line as (
 run_totals as (
     select
         game_pk,
-        sum(post_home_score) as home_runs_scored,
-        sum(post_away_score) as away_runs_scored
+        sum(home_runs_scored) as home_runs_scored,
+        sum(away_runs_scored) as away_runs_scored
     from
         score_line
     group by
