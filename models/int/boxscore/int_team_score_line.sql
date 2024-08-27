@@ -69,4 +69,4 @@ adj as (
 )
 
 select *
-from adj;
+from adj
