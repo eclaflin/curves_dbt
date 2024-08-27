@@ -9,7 +9,7 @@ with scrln_top as (
                 'inning'
             ),
             agg='sum',
-            then_value='post_away_score'
+            then_value='away_runs_scored'
         ) }}
     from
         {{ ref('int_team_score_line') }}
@@ -31,7 +31,7 @@ scrln_bottom as (
                 'inning'
             ),
             agg='sum',
-            then_value='post_home_score'
+            then_value='home_runs_scored'
         ) }}
     from
         {{ ref('int_team_score_line') }}
